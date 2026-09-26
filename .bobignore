@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.contentlayer/
+pnpm-lock.yaml
+public/
+src/assets/fonts/
+src/content/
+drizzle/
+.env
+.env.*
+!.env.example
