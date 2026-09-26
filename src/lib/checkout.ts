@@ -35,11 +35,9 @@ export function getStripePaymentStatusColor({
   status: StripePaymentStatus
   shade?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 950
 }) {
-  const bg = `bg-${shade}`
-
   return cn({
-    [`${bg}-red`]: status === "canceled",
-    [`${bg}-yellow`]: [
+    [`bg-red-${shade}`]: status === "canceled",
+    [`bg-yellow-${shade}`]: [
       "processing",
       "requires_action",
       "requires_capture",
